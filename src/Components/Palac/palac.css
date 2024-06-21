@@ -1,0 +1,15 @@
+
+.palac{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.palac__title{
+    color:#333;
+}
+
+.palac__description{
+    width: 80%;
+}

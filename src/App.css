@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.header, .content, .footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+    background-color:rgb(133, 178, 255) ;
+}
+
+.content a{
+    color: #000;
+    display: block;
+}
+
+.footer{
+    background-color: rgb(133, 178, 255);
+}
+
+h1{
+    margin: 20px 0;
+}
+
+.navigation, .concerts_items{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.concerts_items{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.concerts_item{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.concerts_item img{
+    width: 100%;
+}
+
+.data{
+    color: #699cbd;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: rgb(109, 255, 167);
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(52, 197, 110);
+}
+
+.item{
+    padding: 20px;
+}
+
+.item img{
+    width: 20%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc{
+    text-align: left;
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.backed{
+    width: 90%;
+    height: 100px;
+    
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.backed table{
+    background-color: aquamarine;
+    width: 90%;
+    padding: 20px;
+    /* height: 100px; */
+    
+}
+
+.backed th, .backed td{
+    border: 1px solid #000;
+    text-align: center;
 }
